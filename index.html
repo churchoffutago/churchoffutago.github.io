@@ -1,0 +1,71 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Lifestyle Timeline Responsive Widget Template :: W3layouts</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords"
+		content="Lifestyle Timeline Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+	<!--/Style-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script src="data.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--//Style-CSS -->
+</head>
+
+<body>
+	<!--/timeline-->
+	<section class="w3l-timeline-main">
+
+		<div class="wrapper">
+			<div class="timeline-content-6">
+				<h1>Church of Futago</h1>
+				<ul class="timeline" id="main">
+				</ul>
+			</div>
+			<div class="w3l-copy-right text-center">
+				<p>© 2020 Lifestyle Timeline. All rights reserved | Design by
+					<a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+			</div>
+		</div>
+	</section>
+	<!--//timeline-->
+</body>
+	<script>
+		content.forEach(function (item, index) {
+			direction = index % 2 == 0 ? 'direction-l' : 'direction-r';
+			$('#main').append(
+				`
+					<li>
+						<div class="${direction}">
+							<div class="flag-wrapper">
+								<span class="flag">${item.title}</span>
+								<span class="time-wrapper"><span class="time">${item.time}</span>
+							</div>
+							<div class="desc">
+								${item.content}
+							</div>
+						</div>
+					</li>
+				`
+			);
+		});
+	</script>
+
+</html>
